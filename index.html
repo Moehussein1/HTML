@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html> 
+<html lang="sv">
 <head>
-<link rel="stylesheet" href="style/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min webbplats</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <header>
         <h1>Start</h1>
-
         <nav>
             <ul>
-                <li><a href="index.html" aria-current="page">Start</a></li>
+                <li><a href="index.html">Start</a></li>
                 <li><a href="pages/about.html">Om oss</a></li>
                 <li><a href="pages/contact.html">Kontakt</a></li>
             </ul>
@@ -17,18 +19,58 @@
     </header>
 
     <main>
-        <article>
+        <section>
             <h2>Välkommen till min webbplats</h2>
             <p>Det här är min startsida. Här övar jag på HTML och CSS.</p>
-        </article>
+        </section>
 
-        <article>
+        <section>
             <h2>Webbplatsens sidor</h2>
-            <p>Webbplatsen består av Start, Om oss och Kontakt. Använd menyn för att gå mellan sidorna.</p>
-        </article>
+            <div class="cards">
+                <article class="card">
+                    <h3>Start</h3>
+                    <p>Här hittar du startsidan.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Om oss</h3>
+                    <p>Läs mer om webbplatsen.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Kontakt</h3>
+                    <p>Här finns kontaktformuläret.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Det här lär jag mig</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>HTML</h3>
+                    <p>HTML ger innehållet en tydlig struktur.</p>
+                </article>
+
+                <article class="card">
+                    <h3>CSS</h3>
+                    <p>CSS styr hur webbplatsen ser ut.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Flexbox</h3>
+                    <p>Flexbox hjälper till att ordna innehållet.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Formulär</h3>
+                    <p>Formulär låter besökare lämna information.</p>
+                </article>
+            </div>
+        </section>
     </main>
 
-    <footer>  
+    <footer>
         <p>2026</p>
     </footer>
 </body>
